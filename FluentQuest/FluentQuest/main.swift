@@ -1,6 +1,5 @@
 import Foundation
 
-
 // Função principal para tratar a escolha do usuário
 func tratarEscolhaUsuario() {
     var rodando = true
