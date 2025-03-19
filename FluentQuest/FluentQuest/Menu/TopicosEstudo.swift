@@ -7,3 +7,4 @@ func exibirTopicosEstudo() {
     0 - Voltar ao Menu ↩️
     """)
 }
+
