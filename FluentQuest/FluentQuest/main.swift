@@ -50,7 +50,7 @@ func tratarEscolhaUsuario() {
                                         case 1:
                                             print("fazer logica")
                                         case 2:
-                                            print("fazer logica")
+                                            OuvirETraduzir()
                                         case 3:
                                             ligueLigue(idioma: idioma)
                                         case 0:
