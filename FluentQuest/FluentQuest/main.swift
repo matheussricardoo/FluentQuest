@@ -3,10 +3,10 @@ import Foundation
 // Função principal para tratar a escolha do usuário
 func tratarEscolhaUsuario() {
     var rodando = true
-
+    
     while rodando {
         exibirHome()
-
+        
         if let entrada = readLine(), let opcao = Int(entrada) {
             switch opcao {
             case 1:
@@ -15,7 +15,7 @@ func tratarEscolhaUsuario() {
                     while inGame {
                         exibirModoJogo()
                         print("\nDigite uma opção: ", terminator: "")
-
+                        
                         if let gameInput = readLine(), let gameOpcao = Int(gameInput) {
                             switch gameOpcao {
                             case 1:
@@ -23,7 +23,7 @@ func tratarEscolhaUsuario() {
                                 while estudando {
                                     exibirTopicosEstudo()
                                     print("\nDigite uma opção: ", terminator: "")
-
+                                    
                                     if let topicoInput = readLine(), let topicoOpcao = Int(topicoInput) {
                                         switch topicoOpcao {
                                         case 1:
@@ -34,6 +34,27 @@ func tratarEscolhaUsuario() {
                                             iniciarComprasMercado(idioma: idioma)
                                         case 0:
                                             estudando = false
+                                        default:
+                                            print("\nOpção inválida. Digite 0 a 3")
+                                        }
+                                    }
+                                }
+                            case 2:
+                                var exercicio = true
+                                while exercicio {
+                                    exibirExercicio()
+                                    print("\nDigite uma opção: ", terminator: "")
+                                    
+                                    if let exercicioInput = readLine(), let exercicioOpcao = Int(exercicioInput) {
+                                        switch exercicioOpcao {
+                                        case 1:
+                                            print("fazer logica")
+                                        case 2:
+                                            print("fazer logica")
+                                        case 3:
+                                            ligueLigue(idioma: idioma)
+                                        case 0:
+                                            exercicio = false
                                         default:
                                             print("\nOpção inválida. Digite 0 a 3")
                                         }
