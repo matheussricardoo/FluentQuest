@@ -7,3 +7,4 @@ func exibirModoJogo() {
     4 - Voltar
     """)
 }
+
