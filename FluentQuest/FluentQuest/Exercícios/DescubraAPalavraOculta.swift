@@ -1,9 +1,10 @@
 // Função para iniciar o exercício DescubraAPalavraOculta
 func iniciarDescubraAPalavraOculta(idioma: String) {
     if idioma == "Inglês" {
+        print("Caso deseje sair digite 'sair' ")
         var rodando = true
         
-        let englishWords: [String] = ["Dog", "Ball", "Love"]
+        let englishWords: [String] = ["Cold", "Ball", "Love"]
         if let nomeAleatorio = englishWords.randomElement() {
             let randomWord = nomeAleatorio.count // Tamanho da palavra selecionada
             var palavraOculta: [Character] = Array(repeating: "_", count: randomWord) // Array de Character
@@ -15,6 +16,9 @@ func iniciarDescubraAPalavraOculta(idioma: String) {
                 print("\nDigite aqui: ", terminator: "")
                 
                 if let inputUsuario = readLine()?.lowercased(), inputUsuario.count == randomWord {
+                    if inputUsuario == "sair" {
+                        rodando = false
+                    }
                     let vetorInput = Array(inputUsuario)
                     var palavraParcial = palavraOculta // Cópia temporária
                     
@@ -33,7 +37,7 @@ func iniciarDescubraAPalavraOculta(idioma: String) {
                         print("Você acertou! A palavra era '\(nomeAleatorio)'!")
                         rodando = false
                     }
-                } else {
+                } else{
                     print("Tente novamente. A palavra tem \(randomWord) letras!")
                 }
             }
@@ -43,7 +47,7 @@ func iniciarDescubraAPalavraOculta(idioma: String) {
     else if idioma == "Espanhol" {
         var rodando = true
         
-        let englishWords: [String] = ["Perro", "Bola", "Amor"]
+        let englishWords: [String] = ["Hijo", "Bola", "Amor"]
         if let nomeAleatorio = englishWords.randomElement() {
             let randomWord = nomeAleatorio.count
             var palavraOculta: [Character] = Array(repeating: "_", count: randomWord)
@@ -55,6 +59,9 @@ func iniciarDescubraAPalavraOculta(idioma: String) {
                 print("\nDigite aqui: ", terminator: "")
                 
                 if let inputUsuario = readLine()?.lowercased(), inputUsuario.count == randomWord {
+                    if inputUsuario == "sair" {
+                        rodando = false
+                    }
                     let vetorInput = Array(inputUsuario)
                     var palavraParcial = palavraOculta
                     
@@ -81,7 +88,7 @@ func iniciarDescubraAPalavraOculta(idioma: String) {
     } else{
         var rodando = true
         
-        let englishWords: [String] = ["Chien", "Balle", "Amour"]
+        let englishWords: [String] = ["Ciel", "Vase", "Plat"]
         if let nomeAleatorio = englishWords.randomElement() {
             let randomWord = nomeAleatorio.count
             var palavraOculta: [Character] = Array(repeating: "_", count: randomWord)
@@ -93,6 +100,9 @@ func iniciarDescubraAPalavraOculta(idioma: String) {
                 print("\nDigite aqui: ", terminator: "")
                 
                 if let inputUsuario = readLine()?.lowercased(), inputUsuario.count == randomWord {
+                    if inputUsuario == "sair" {
+                        rodando = false
+                    }
                     let vetorInput = Array(inputUsuario)
                     var palavraParcial = palavraOculta
                     
