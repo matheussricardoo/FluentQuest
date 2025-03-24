@@ -1,461 +1,62 @@
-// Função para exibir a introdução de Compras no Mercado
-
+// Dicionário de palavras e suas traduções em cada idioma
+let traducoes = [
+    "Chuva": ["Inglês": "3", "Espanhol": "3", "Francês": "3"],
+    "Sol": ["Inglês": "5", "Espanhol": "5", "Francês": "5"],
+    "Voo": ["Inglês": "2", "Espanhol": "2", "Francês": "2"],
+    "Escola": ["Inglês": "1", "Espanhol": "1", "Francês": "1"],
+    "Dirigir": ["Inglês": "4", "Espanhol": "4", "Francês": "4"]
+]
+// Dicionário das opções de resposta para cada idioma
+let opcoes = [
+    "Inglês": ["1. School", "2. Flight", "3. Rain", "4. Drive", "5. Sun"],
+    "Espanhol": ["1. Escuela", "2. Vuelo", "3. Lluvia", "4. Conducir", "5. Sol"],
+    "Francês": ["1. École", "2. Vol", "3. Pluie", "4. Conduire", "5. Soleil"]
+]
 func exibirSelecioneATraducaoCorreta() {
     print("\n🎯 Hora de praticar traduções! 🌍\n")
-    print("Neste exercício, você vai aprender a traduzir algumas palavras entre o português, o inglês, o espanhol e o francês.")
-    print("Acompanhe o passo a passo e teste seu conhecimento sobre vocabulário básico nesses idiomas.\n")
-    
+    print("Neste exercício, você aprenderá vocabulário em inglês, espanhol e francês.\n")
     print("🔹 Como funciona?")
-    print("- Leia as palavras em português e escolha a tradução correta nos outros idiomas, indicando o número correspondente.")
-    
-    print("""
-    1. Chuva        1. School
-    2. Sol          2. Flight
-    3. Voo          3. Rain
-    4. Escola       4. Drive
-    5. Dirigir      5. Sun
-    """)
-    
-    print("- Responda às perguntas para testar sua compreensão.")
-    print("- Aprenda vocabulário útil para o dia a dia nesses idiomas.\n")
-    
-    print("📖 O que você aprenderá?")
-    print("- Palavras em português e suas traduções para o inglês, espanhol e francês.")
-    print("- Como melhorar seu vocabulário de maneira interativa nos três idiomas.\n")
-    
-    print("Vamos começar o desafio de traduções! ✨")
-    print("\nPressione **ENTER** para começar...")
-    _ = readLine() // Aguarda ENTER
+    print("- Escolha a tradução correta para cada palavra em português.\n")
+    print("Vamos começar! Pressione **ENTER** para continuar...")
+    _ = readLine()
 }
-
-
-func selecioneATraducaoCorreta (idioma: String){
-    exibirSelecioneATraducaoCorreta()
-    var rodando = true
-    while rodando {
-        if idioma == "Inglês"{
-            print("""
-            
-            1.Chuva        1.School
-            2.Sol          2.Flight
-            3.Voo          3.Rain
-            4.Escola       4.Drive
-            5.Dirigir      5.Sun
-            6.Voltar
-            
-            
-            """)
-            print("Selecione a tradução em inglês para Chuva, indicando a numeração.")
-            var verif1 = 0
-            while verif1 == 0{
-                if let rain = readLine(){
-                    switch rain {
-                    case "3":
-                        print("Tradução correta")
-                        verif1 = 1
-                    case "1":
-                        print("Tradução incorreta, tente novamente!")
-                    case "2":
-                        print("Tradução incorreta, tente novamente!")
-                    case "4":
-                        print("Tradução incorreta, tente novamente!")
-                    case "5":
-                        print("Tradução incorreta, tente novamente!")
-                    case "6":
-                        rodando = false
-                        return
-                    default:
-                        print("Digite um número válido (1-5)")
-                    }
-                }
-                
-            }
-            print("Selecione a tradução em inglês para Sol, indicando a numeração.")
-            var verif2 = 0
-            while verif2 == 0{
-                
-                if let sol = readLine(){
-                    switch sol {
-                    case "5":
-                        print("Tradução correta")
-                        verif2 = 1
-                    case "1":
-                        print("Tradução incorreta, tente novamente!")
-                    case "2":
-                        print("Tradução incorreta, tente novamente!")
-                    case "4":
-                        print("Tradução incorreta, tente novamente!")
-                    case "3":
-                        print("Tradução incorreta, tente novamente!")
-                    case "6":
-                        rodando = false
-                        return
-                    default:
-                        print("Digite um número válido (1-5)")
-                    }
-                }
-                
-            }
-            print("Selecione a tradução em inglês para Voo, indicando a numeração.")
-            var verif3 = 0
-            while verif3 == 0{
-                if let voo = readLine(){
-                    switch voo {
-                    case "2":
-                        print("Tradução correta")
-                        verif3 = 1
-                    case "1":
-                        print("Tradução incorreta, tente novamente!")
-                    case "5":
-                        print("Tradução incorreta, tente novamente!")
-                    case "4":
-                        print("Tradução incorreta, tente novamente!")
-                    case "3":
-                        print("Tradução incorreta, tente novamente!")
-                    case "6":
-                        rodando = false
-                        return
-                    default:
-                        print("Digite um número válido (1-5)")
-                    }
-                }
-                
-            }
-            print("Selecione a tradução em inglês para Escola, indicando a numeração.")
-            var verif4 = 0
-            while verif4 == 0{
-                if let escola = readLine(){
-                    switch escola {
-                    case "1":
-                        print("Tradução correta")
-                        verif4 = 1
-                    case "2":
-                        print("Tradução incorreta, tente novamente!")
-                    case "5":
-                        print("Tradução incorreta, tente novamente!")
-                    case "4":
-                        print("Tradução incorreta, tente novamente!")
-                    case "3":
-                        print("Tradução incorreta, tente novamente!")
-                    case "6":
-                        rodando = false
-                        return
-                    default:
-                        print("Digite um número válido (1-5)")
-                        
-                    }
-                }
-                
-            }
-            print("Selecione a tradução em inglês para Dirigir, indicando a numeração.")
-            var verif5 = 0
-            while verif5 == 0{
-                if let dirigir = readLine(){
-                    switch dirigir {
-                    case "4":
-                        print("Tradução correta")
-                        verif5 = 1
-                    case "2":
-                        print("Tradução incorreta, tente novamente!")
-                    case "5":
-                        print("Tradução incorreta, tente novamente!")
-                    case "1":
-                        print("Tradução incorreta, tente novamente!")
-                    case "3":
-                        print("Tradução incorreta, tente novamente!")
-                    case "6":
-                        rodando = false
-                        return
-                    default:
-                        print("Digite um número válido (1-5)")
-                    }
-                }
-                
-            }
-        }
-        else if idioma == "Espanhol"{
-            print("""
-        
-        1.Chuva        1.Escuela
-        2.Sol          2.Vuelo
-        3.Voo          3.Lluvia
-        4.Escola       4.Conducir
-        5.Dirigir      5.Sol
-        6.Voltar
-        
-        """)
-            print("Selecione a tradução em espanhol para Chuva, indicando a numeração.")
-            var verif1 = 0
-            while verif1 == 0{
-                if let rain = readLine(){
-                    switch rain {
-                    case "3":
-                        print("Tradução correta")
-                        verif1 = 1
-                    case "1":
-                        print("Tradução incorreta, tente novamente!")
-                    case "2":
-                        print("Tradução incorreta, tente novamente!")
-                    case "4":
-                        print("Tradução incorreta, tente novamente!")
-                    case "5":
-                        print("Tradução incorreta, tente novamente!")
-                    case "6":
-                        rodando = false
-                        return
-                    default:
-                        print("Digite um número válido (1-5)")
-                    }
-                }
-                
-            }
-            print("Selecione a tradução em espanhol para Sol, indicando a numeração.")
-            var verif2 = 0
-            while verif2 == 0{
-                
-                if let sol = readLine(){
-                    switch sol {
-                    case "5":
-                        print("Tradução correta")
-                        verif2 = 1
-                    case "1":
-                        print("Tradução incorreta, tente novamente!")
-                    case "2":
-                        print("Tradução incorreta, tente novamente!")
-                    case "4":
-                        print("Tradução incorreta, tente novamente!")
-                    case "3":
-                        print("Tradução incorreta, tente novamente!")
-                    case "6":
-                        rodando = false
-                        return
-                    default:
-                        print("Digite um número válido (1-5)")
-                    }
-                }
-                
-            }
-            print("Selecione a tradução em espanhol para Voo, indicando a numeração.")
-            var verif3 = 0
-            while verif3 == 0{
-                if let voo = readLine(){
-                    switch voo {
-                    case "2":
-                        print("Tradução correta")
-                        verif3 = 1
-                    case "1":
-                        print("Tradução incorreta, tente novamente!")
-                    case "5":
-                        print("Tradução incorreta, tente novamente!")
-                    case "4":
-                        print("Tradução incorreta, tente novamente!")
-                    case "3":
-                        print("Tradução incorreta, tente novamente!")
-                    case "6":
-                        rodando = false
-                        return
-                    default:
-                        print("Digite um número válido (1-5)")
-                    }
-                }
-                
-            }
-            print("Selecione a tradução em espanhol para Escola, indicando a numeração.")
-            var verif4 = 0
-            while verif4 == 0{
-                if let escola = readLine(){
-                    switch escola {
-                    case "1":
-                        print("Tradução correta")
-                        verif4 = 1
-                    case "2":
-                        print("Tradução incorreta, tente novamente!")
-                    case "5":
-                        print("Tradução incorreta, tente novamente!")
-                    case "4":
-                        print("Tradução incorreta, tente novamente!")
-                    case "3":
-                        print("Tradução incorreta, tente novamente!")
-                    case "6":
-                        rodando = false
-                        return
-                    default:
-                        print("Digite um número válido (1-5)")
-                        
-                    }
-                }
-                
-            }
-            print("Selecione a tradução em espanhol para Dirigir, indicando a numeração.")
-            var verif5 = 0
-            while verif5 == 0{
-                if let dirigir = readLine(){
-                    switch dirigir {
-                    case "4":
-                        print("Tradução correta")
-                        verif5 = 1
-                    case "2":
-                        print("Tradução incorreta, tente novamente!")
-                    case "5":
-                        print("Tradução incorreta, tente novamente!")
-                    case "1":
-                        print("Tradução incorreta, tente novamente!")
-                    case "3":
-                        print("Tradução incorreta, tente novamente!")
-                    case "6":
-                        rodando = false
-                        return
-                    default:
-                        print("Digite um número válido (1-5)")
-                    }
-                }
-                
-            }
-            
-            
-            
-        } else {
-            print("""
-    
-    1.Chuva        1.École
-    2.Sol          2.Vol
-    3.Voo          3.Pluie
-    4.Escola       4.Conduire
-    5.Dirigir      5.Soleil
-    6.Voltar
-    """)
-            print("Selecione a tradução em francês para Chuva, indicando a numeração.")
-            var verif1 = 0
-            while verif1 == 0{
-                if let rain = readLine(){
-                    switch rain {
-                    case "3":
-                        print("Tradução correta")
-                        verif1 = 1
-                    case "1":
-                        print("Tradução incorreta, tente novamente!")
-                    case "2":
-                        print("Tradução incorreta, tente novamente!")
-                    case "4":
-                        print("Tradução incorreta, tente novamente!")
-                    case "5":
-                        print("Tradução incorreta, tente novamente!")
-                    case "6":
-                        rodando = false
-                        return
-                    default:
-                        print("Digite um número válido (1-5)")
-                    }
-                }
-                
-            }
-            print("Selecione a tradução em francês para Sol, indicando a numeração.")
-            var verif2 = 0
-            while verif2 == 0{
-                
-                if let sol = readLine(){
-                    switch sol {
-                    case "5":
-                        print("Tradução correta")
-                        verif2 = 1
-                    case "1":
-                        print("Tradução incorreta, tente novamente!")
-                    case "2":
-                        print("Tradução incorreta, tente novamente!")
-                    case "4":
-                        print("Tradução incorreta, tente novamente!")
-                    case "3":
-                        print("Tradução incorreta, tente novamente!")
-                    case "6":
-                        rodando = false
-                        return
-                    default:
-                        print("Digite um número válido (1-5)")
-                    }
-                }
-                
-            }
-            print("Selecione a tradução em francês para Voo, indicando a numeração.")
-            var verif3 = 0
-            while verif3 == 0{
-                if let voo = readLine(){
-                    switch voo {
-                    case "2":
-                        print("Tradução correta")
-                        verif3 = 1
-                    case "1":
-                        print("Tradução incorreta, tente novamente!")
-                    case "5":
-                        print("Tradução incorreta, tente novamente!")
-                    case "4":
-                        print("Tradução incorreta, tente novamente!")
-                    case "3":
-                        print("Tradução incorreta, tente novamente!")
-                    case "6":
-                        rodando = false
-                        return
-                    default:
-                        print("Digite um número válido (1-5)")
-                    }
-                }
-                
-            }
-            print("Selecione a tradução em francês para Escola, indicando a numeração.")
-            var verif4 = 0
-            while verif4 == 0{
-                if let escola = readLine(){
-                    switch escola {
-                    case "1":
-                        print("Tradução correta")
-                        verif4 = 1
-                    case "2":
-                        print("Tradução incorreta, tente novamente!")
-                    case "5":
-                        print("Tradução incorreta, tente novamente!")
-                    case "4":
-                        print("Tradução incorreta, tente novamente!")
-                    case "3":
-                        print("Tradução incorreta, tente novamente!")
-                    case "6":
-                        rodando = false
-                        return
-                    default:
-                        print("Digite um número válido (1-5)")
-                        
-                    }
-                }
-                
-            }
-            print("Selecione a tradução em francês para Dirigir, indicando a numeração.")
-            var verif5 = 0
-            while verif5 == 0{
-                if let dirigir = readLine(){
-                    switch dirigir {
-                    case "4":
-                        print("Tradução correta")
-                        verif5 = 1
-                    case "2":
-                        print("Tradução incorreta, tente novamente!")
-                    case "5":
-                        print("Tradução incorreta, tente novamente!")
-                    case "1":
-                        print("Tradução incorreta, tente novamente!")
-                    case "3":
-                        print("Tradução incorreta, tente novamente!")
-                    case "6":
-                        rodando = false
-                        return
-                    default:
-                        print("Digite um número válido (1-5)")
-                    }
-                }
-                
-            }
-        }
-        
-        
-        
+func verificarResposta(palavra: String, idioma: String) {
+    guard let respostaCorreta = traducoes[palavra]?[idioma] else {
+        print("Erro ao encontrar tradução para \(palavra) em \(idioma).")
+        return
     }
     
-    
+    while true {
+        print("\nSelecione a tradução em \(idioma) para \(palavra):")
+        if let opcoesIdioma = opcoes[idioma] {
+            for opcao in opcoesIdioma {
+                print(opcao)
+            }
+        }
+        print("6. Voltar")
+        
+        if let entrada = readLine() {
+            if entrada == "6" {
+                return
+            } else if entrada == respostaCorreta {
+                print("✅ Tradução correta!")
+                return
+            } else {
+                print("❌ Tradução incorreta, tente novamente!")
+            }
+        } else {
+            print("Entrada inválida. Tente novamente!")
+        }
+    }
+}
+
+func selecionarPalavra(){
+    for palavra in traducoes.keys {
+        verificarResposta(palavra: palavra, idioma: idiomaSelecionado!)
+    }
+}
+
+func iniciarSelecioneTraducao (idioma: String){
+    exibirSelecioneATraducaoCorreta()
+    selecionarPalavra()
 }
