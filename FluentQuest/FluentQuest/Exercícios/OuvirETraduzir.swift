@@ -82,8 +82,8 @@ func startGame() {
                     idiomaSelecionado = nil
                     break
                 } else if response == "1" {
-                    speak(foreignWord, voice) // Fala a palavra antes de mostrar a mensagem
                     print("\n\(yellow)🔄 Repetindo palavra...🔄\(reset)")
+                    speak(foreignWord, voice)
                 } else if response == translation {
                     print("\n\(green)✅ Correto! A palavra '\(foreignWord)' significa '\(translation)'. 🎉\(reset)")
                     speak("Correto! A palavra \(foreignWord) significa \(translation).", voices["Português"]!)
