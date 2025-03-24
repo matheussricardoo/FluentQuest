@@ -59,7 +59,7 @@ func tratarEscolhaUsuario() {
                                         case 2:
                                             OuvirETraduzir()
                                         case 3:
-                                            selecioneATraducaoCorreta(idioma: idiomaSelecionado!)
+                                            iniciarSelecioneTraducao(idioma: idiomaSelecionado!)
                                         case 0:
                                             exercicio = false
                                         default:
