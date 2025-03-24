@@ -11,7 +11,7 @@ func tratarEscolhaUsuario() {
         if let entrada = readLine(), let opcao = Int(entrada) {
             switch opcao {
             case 1:
-                if let idioma = selecionarIdioma() { // Chama a função para selecionar o idioma
+                if selecionarIdioma() != nil { // Chama a função para selecionar o idioma
                     var inGame = true
                     while inGame {
                         limparTerminal()
@@ -31,13 +31,13 @@ func tratarEscolhaUsuario() {
                                         switch topicoOpcao {
                                         case 1:
                                             limparTerminal()
-                                            iniciarRotinaDiaria(idioma: idioma)
+                                            iniciarRotinaDiaria(idioma: idiomaSelecionado!)
                                         case 2:
                                             limparTerminal()
-                                            iniciarViagemMundo(idioma: idioma)
+                                            iniciarViagemMundo(idioma: idiomaSelecionado!)
                                         case 3:
                                             limparTerminal()
-                                            iniciarComprasMercado(idioma: idioma)
+                                            iniciarComprasMercado(idioma: idiomaSelecionado!)
                                         case 0:
                                             estudando = false
                                         default:
@@ -48,17 +48,18 @@ func tratarEscolhaUsuario() {
                             case 2:
                                 var exercicio = true
                                 while exercicio {
+                                    idiomaSelecionado = idiomaSalvo
                                     exibirExercicio()
                                     print("\nDigite uma opção: ", terminator: "")
                                     
                                     if let exercicioInput = readLine(), let exercicioOpcao = Int(exercicioInput) {
                                         switch exercicioOpcao {
                                         case 1:
-                                            iniciarDescubraAPalavraOculta(idioma: idioma)
+                                            iniciarDescubraAPalavraOculta(idioma: idiomaSelecionado!)
                                         case 2:
                                             OuvirETraduzir()
                                         case 3:
-                                            selecioneATraducaoCorreta(idioma: idioma)
+                                            selecioneATraducaoCorreta(idioma: idiomaSelecionado!)
                                         case 0:
                                             exercicio = false
                                         default:
