@@ -40,6 +40,7 @@ func verificarResposta(palavra: String, idioma: String) {
                 return
             } else if entrada == respostaCorreta {
                 print("✅ Tradução correta!")
+                dicionario.insert(respostaCorreta)
                 return
             } else {
                 print("❌ Tradução incorreta, tente novamente!")

@@ -69,6 +69,7 @@ func iniciarDescubraAPalavraOculta(idioma: String) {
                 // Verifica se o usuário acertou a palavra
                 if palavraOculta == vetorNomeAleatorio {
                     print("🎉 Parabéns! A palavra era '\(nomeAleatorio)'!")
+                    dicionario.insert(nomeAleatorio)
                     rodando = false
                 }
             } else {

@@ -53,7 +53,7 @@ func readUserInput() -> String {
 //}
 
 // Função principal do jogo
-func startGame(idioma:String) {
+func startGame() {
     while let language = idiomaSelecionado { // Enquanto um idioma for selecionado, o jogo continua
         let voice = voices[language] ?? "Luciana" // Define a voz para o idioma escolhido
 
@@ -87,6 +87,7 @@ func startGame(idioma:String) {
                 } else if response == translation {
                     print("\n\(green)✅ Correto! A palavra '\(foreignWord)' significa '\(translation)'. 🎉\(reset)")
                     speak("Correto! A palavra \(foreignWord) significa \(translation).", voices["Português"]!)
+                    dicionario.insert(translation)
                     break // Sorteia uma nova palavra
                 } else {
                     print("\n\(red)❌ Errado! A resposta correta era '\(translation)'. Vamos tentar outra! \(reset)")
@@ -97,6 +98,6 @@ func startGame(idioma:String) {
         }
     }
 }
-func OuvirETraduzir(idioma:String) {
-    startGame(idioma: idiomaSelecionado!) // Inicia o jogo
+func OuvirETraduzir() {
+    startGame() // Inicia o jogo
 }
