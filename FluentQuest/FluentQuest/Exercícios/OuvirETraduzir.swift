@@ -53,7 +53,7 @@ func readUserInput() -> String {
 //}
 
 // Função principal do jogo
-func startGame() {
+func startGame(idioma:String) {
     while let language = idiomaSelecionado { // Enquanto um idioma for selecionado, o jogo continua
         let voice = voices[language] ?? "Luciana" // Define a voz para o idioma escolhido
 
@@ -97,6 +97,6 @@ func startGame() {
         }
     }
 }
-func OuvirETraduzir() {
-    startGame() // Inicia o jogo
+func OuvirETraduzir(idioma:String) {
+    startGame(idioma: idiomaSelecionado!) // Inicia o jogo
 }
