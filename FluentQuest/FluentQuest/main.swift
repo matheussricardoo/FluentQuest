@@ -75,7 +75,7 @@ func tratarEscolhaUsuario() {
                                         case 1:
                                             iniciarDescubraAPalavraOculta(idioma: idiomaSelecionado!)
                                         case 2:
-                                            OuvirETraduzir()
+                                            OuvirETraduzir(idioma: idiomaSelecionado!)
                                         case 3:
                                             iniciarSelecioneTraducao(idioma: idiomaSelecionado!)
                                         case 0:
