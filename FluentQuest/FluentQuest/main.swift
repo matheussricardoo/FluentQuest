@@ -1,8 +1,26 @@
 import Foundation
 
+// Variável global para controlar se o jogo deve continuar rodando
+var rodando = true
+
+// Função para tratar o sinal SIGINT (Control + C)
+func configurarCapturaDeSinal() {
+    signal(SIGINT) { signal in
+        print("\nDeseja realmente encerrar o jogo, DIEGO? (s/n): ", terminator: "")
+        if let resposta = readLine()?.lowercased() {
+            if resposta == "s" {
+                print("\nAté logo! 😊")
+                exit(0) // Finaliza o programa
+            } else {
+                print("Continuando o jogo...")
+            }
+        }
+    }
+}
+
 // Função principal para tratar a escolha do usuário
 func tratarEscolhaUsuario() {
-    var rodando = true
+    configurarCapturaDeSinal() // Configura a captura do sinal SIGINT
     
     while rodando {
         limparTerminal()
