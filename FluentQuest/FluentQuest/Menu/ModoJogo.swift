@@ -4,7 +4,7 @@ func exibirModoJogo() {
     1 - Estudar
     2 - Exercício
     3 - Ver Dicionário
-    4 - Voltar
+    0 - Voltar
     """)
 }
 

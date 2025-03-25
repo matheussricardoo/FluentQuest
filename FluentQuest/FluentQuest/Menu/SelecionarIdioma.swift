@@ -7,9 +7,9 @@ func selecionarIdioma() {
     1 - Inglês
     2 - Espanhol
     3 - Francês
-    4 - Voltar
+    0 - Voltar
     """)
-
+    
     while true {
         print("\nDigite o número: ", terminator: "")
         if let escolha = readLine(), let opcao = Int(escolha) {
@@ -23,7 +23,7 @@ func selecionarIdioma() {
             case 3:
                 idiomaSelecionado = "Francês"
                 return
-            case 4:
+            case 0:
                 idiomaSelecionado = nil
                 return
             default:
