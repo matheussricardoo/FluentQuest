@@ -29,7 +29,8 @@ func tratarEscolhaUsuario() {
         if let entrada = readLine(), let opcao = Int(entrada) {
             switch opcao {
             case 1:
-                if selecionarIdioma() != nil { // Chama a função para selecionar o idioma
+                selecionarIdioma()
+                if idiomaSelecionado != nil { // Chama a função para selecionar o idioma
                     var inGame = true
                     while inGame {
                         limparTerminal()
@@ -66,7 +67,6 @@ func tratarEscolhaUsuario() {
                             case 2:
                                 var exercicio = true
                                 while exercicio {
-                                    idiomaSelecionado = idiomaSalvo
                                     exibirExercicio()
                                     print("\nDigite uma opção: ", terminator: "")
                                     
@@ -75,7 +75,7 @@ func tratarEscolhaUsuario() {
                                         case 1:
                                             iniciarDescubraAPalavraOculta(idioma: idiomaSelecionado!)
                                         case 2:
-                                            OuvirETraduzir(idioma: idiomaSelecionado!)
+                                            OuvirETraduzir()
                                         case 3:
                                             iniciarSelecioneTraducao(idioma: idiomaSelecionado!)
                                         case 0:
@@ -85,15 +85,32 @@ func tratarEscolhaUsuario() {
                                         }
                                     }
                                 }
-                            case 4:
+                            case 3:
+                                var dicionario = true
+                                while dicionario{
+                                    print("Digite 1 para ir para o dicionario ou 0 para voltar")
+                                    print("\nDigite uma opção: ", terminator: "")
+                                    if let dicionarioInput = readLine(), let dicionarioOpcao = Int(dicionarioInput) {
+                                        switch dicionarioOpcao{
+                                        case 1:
+                                            verDicionario()
+                                        case 0:
+                                            dicionario = false
+                                        default:
+                                            print("\n Opção inválida")
+                                        }
+                                    }
+                                }
+                            case 0:
                                 inGame = false
                             default:
                                 print("\nOpção inválida!")
+                                
                             }
                         }
                     }
                 }
-            case 2:
+            case 0:
                 print("\nAté logo! 😊")
                 rodando = false
             default:
@@ -104,4 +121,6 @@ func tratarEscolhaUsuario() {
 }
 
 // Iniciar o jogo
+
 tratarEscolhaUsuario()
+
