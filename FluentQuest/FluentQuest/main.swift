@@ -35,7 +35,7 @@ func tratarEscolhaUsuario() {
                     while inGame {
                         limparTerminal()
                         exibirModoJogo()
-                        print("\nDigite uma opção: ", terminator: "")
+                        print("\n  \u{200B}\u{200B}  \(blank)  Digite uma opção: ", terminator: "")
                         
                         if let gameInput = readLine(), let gameOpcao = Int(gameInput) {
                             switch gameOpcao {
@@ -44,7 +44,7 @@ func tratarEscolhaUsuario() {
                                 while estudando {
                                     limparTerminal()
                                     exibirTopicosEstudo()
-                                    print("\nDigite uma opção: ", terminator: "")
+                                    print("\n\(blank)Digite uma opção: ", terminator: "")
                                     
                                     if let topicoInput = readLine(), let topicoOpcao = Int(topicoInput) {
                                         switch topicoOpcao {
@@ -60,7 +60,7 @@ func tratarEscolhaUsuario() {
                                         case 0:
                                             estudando = false
                                         default:
-                                            print("\nOpção inválida. Digite 0 a 3")
+                                            print("\n\(blank)Opção inválida. Digite 0 a 3")
                                         }
                                     }
                                 }
@@ -68,20 +68,23 @@ func tratarEscolhaUsuario() {
                                 var exercicio = true
                                 while exercicio {
                                     exibirExercicio()
-                                    print("\nDigite uma opção: ", terminator: "")
+                                    print("\n  \(blank)   Digite uma opção: ", terminator: "")
                                     
                                     if let exercicioInput = readLine(), let exercicioOpcao = Int(exercicioInput) {
                                         switch exercicioOpcao {
                                         case 1:
-                                            iniciarDescubraAPalavraOculta(idioma: idiomaSelecionado!)
+                                            limparTerminal()
+                                            iniciarPalavreco(idioma: idiomaSelecionado!)
                                         case 2:
-                                            OuvirETraduzir()
+                                            limparTerminal()
+                                            iniciarTerminalFalante(idioma: idiomaSelecionado!)
                                         case 3:
-                                            iniciarSelecioneTraducao(idioma: idiomaSelecionado!)
+                                            limparTerminal()
+                                            iniciarLigueLigue(idioma: idiomaSelecionado!)
                                         case 0:
                                             exercicio = false
                                         default:
-                                            print("\nOpção inválida. Digite 0 a 3")
+                                            print("\n\(blank)Opção inválida. Digite 0 a 3")
                                         }
                                     }
                                 }
@@ -104,17 +107,17 @@ func tratarEscolhaUsuario() {
                             case 0:
                                 inGame = false
                             default:
-                                print("\nOpção inválida!")
+                                print("\n\(blank)Opção inválida!")
                                 
                             }
                         }
                     }
                 }
             case 0:
-                print("\nAté logo! 😊")
+                print("\n\(blank)Até logo! 😊")
                 rodando = false
             default:
-                print("\nOpção inválida!")
+                print("\n\(blank)Opção inválida!")
             }
         }
     }
