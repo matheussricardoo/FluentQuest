@@ -35,7 +35,7 @@ func verificarResposta(palavra: String, idioma: String) {
         for opcao in opcoesIdioma {
             print(opcao)
         }
-        print("6. Voltar")
+        print("0. Voltar")
         
         if let entrada = readLine(), let numeroEscolhido = Int(entrada), numeroEscolhido >= 1, numeroEscolhido <= 5 {
             let palavraSelecionada = opcoesIdioma[numeroEscolhido - 1].dropFirst(3) // Remove o número e o ponto
@@ -47,7 +47,7 @@ func verificarResposta(palavra: String, idioma: String) {
             } else {
                 print("❌ Tradução incorreta, tente novamente!")
             }
-        } else if entrada == "6" {
+        } else if entrada == "0" {
             return
         } else {
             print("Entrada inválida. Tente novamente!")
