@@ -14,9 +14,6 @@ let opcoes: [String: [String]] = [
     "Francês": ["1. École", "2. Vol", "3. Pluie", "4. Conduire", "5. Soleil"]
 ]
 
-// Conjunto para armazenar palavras corretas
-var dicionario = Set<String>()
-
 func exibirLigueLigue() {
     print("\n🎯 Hora de praticar traduções! 🌍\n")
     print("Neste exercício, você aprenderá vocabulário em inglês, espanhol e francês.\n")
