@@ -2,6 +2,28 @@ import Foundation
 
 var dicionario = Set<String>()
 
-func verDicionario() -> String {
-    return dicionario.joined(separator: ", ") // Retorna as palavras como uma única string separadas por vírgula
+func verDicionario() {
+    PrintDicionario()
+    let palavras = dicionario.isEmpty ? ["Dicionário Vazio"] : Array(dicionario)
+    
+    let livro = """
+    
+    
+    
+                                                                  .-/|                  \\ /                  |\\-.
+                                                                  ||||                   |                   ||||
+                                                                  ||||                   |       ~~*~~       ||||
+                                                                  ||||    --==*==--      |                   ||||
+                                                                  ||||                   |                   ||||
+                                                                  ||||                   |     --==*==--     ||||
+                                                                \(palavras.map { "  ||||      \($0)          ||||" }.joined(separator: "\n"))
+                                                                  ||||__________________ | __________________||||
+                                                                  ||/===================\\|/===================\\||
+                                                                  `--------------------~___~-------------------''
+    
+    
+    
+    """
+    
+    print(livro)
 }

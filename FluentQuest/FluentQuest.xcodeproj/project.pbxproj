@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5507D2F22D95CEA7002BB1B4 /* PrintTerminalFalante.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5507D2F12D95CEA7002BB1B4 /* PrintTerminalFalante.swift */; };
+		5507D2F42D95E7AD002BB1B4 /* PrintLigueLigue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5507D2F32D95E7AD002BB1B4 /* PrintLigueLigue.swift */; };
+		5507D2F62D95EF09002BB1B4 /* PrintDicionario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5507D2F52D95EF09002BB1B4 /* PrintDicionario.swift */; };
+		553792C92D94693D000944A6 /* Dicionario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553792C82D94693D000944A6 /* Dicionario.swift */; };
+		553792CB2D9475BD000944A6 /* CaractereVazio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553792CA2D9475BD000944A6 /* CaractereVazio.swift */; };
+		553792CE2D949ACF000944A6 /* PrintPalavreco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553792CD2D949ACF000944A6 /* PrintPalavreco.swift */; };
 		558F66B42D8DFD4800ADB9B4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558F66B32D8DFD4800ADB9B4 /* main.swift */; };
 		558F66C42D8DFDE500ADB9B4 /* ModoJogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558F66BE2D8DFDE500ADB9B4 /* ModoJogo.swift */; };
 		558F66C52D8DFDE500ADB9B4 /* TopicosEstudo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558F66BF2D8DFDE500ADB9B4 /* TopicosEstudo.swift */; };
-		558F66C62D8DFDE500ADB9B4 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558F66C02D8DFDE500ADB9B4 /* Menu.swift */; };
 		558F66C72D8DFDE500ADB9B4 /* MenuPrincipal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558F66C12D8DFDE500ADB9B4 /* MenuPrincipal.swift */; };
 		558F66C82D8DFDE500ADB9B4 /* SelecionarIdioma.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558F66C22D8DFDE500ADB9B4 /* SelecionarIdioma.swift */; };
 		558F66C92D8DFDE500ADB9B4 /* Exercicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558F66C32D8DFDE500ADB9B4 /* Exercicio.swift */; };
@@ -20,9 +25,9 @@
 		558F66D32D8DFE0800ADB9B4 /* RotinaDiaria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558F66D02D8DFE0800ADB9B4 /* RotinaDiaria.swift */; };
 		558F66D42D8DFE0800ADB9B4 /* ViagemMundo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558F66D12D8DFE0800ADB9B4 /* ViagemMundo.swift */; };
 		558F66D52D8DFE0800ADB9B4 /* ComprasMercado.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558F66D22D8DFE0800ADB9B4 /* ComprasMercado.swift */; };
-		558F66D92D8DFE1300ADB9B4 /* DescubraAPalavraOculta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558F66D62D8DFE1300ADB9B4 /* DescubraAPalavraOculta.swift */; };
-		558F66DA2D8DFE1300ADB9B4 /* OuvirETraduzir.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558F66D72D8DFE1300ADB9B4 /* OuvirETraduzir.swift */; };
-		558F66DB2D8DFE1300ADB9B4 /* SelecioneATraduçãoCorreta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558F66D82D8DFE1300ADB9B4 /* SelecioneATraduçãoCorreta.swift */; };
+		558F66D92D8DFE1300ADB9B4 /* Palavreco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558F66D62D8DFE1300ADB9B4 /* Palavreco.swift */; };
+		558F66DA2D8DFE1300ADB9B4 /* TerminalFalante.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558F66D72D8DFE1300ADB9B4 /* TerminalFalante.swift */; };
+		558F66DB2D8DFE1300ADB9B4 /* LigueLigue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558F66D82D8DFE1300ADB9B4 /* LigueLigue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,11 +43,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5507D2F12D95CEA7002BB1B4 /* PrintTerminalFalante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintTerminalFalante.swift; sourceTree = "<group>"; };
+		5507D2F32D95E7AD002BB1B4 /* PrintLigueLigue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintLigueLigue.swift; sourceTree = "<group>"; };
+		5507D2F52D95EF09002BB1B4 /* PrintDicionario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintDicionario.swift; sourceTree = "<group>"; };
+		553792C82D94693D000944A6 /* Dicionario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dicionario.swift; sourceTree = "<group>"; };
+		553792CA2D9475BD000944A6 /* CaractereVazio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaractereVazio.swift; sourceTree = "<group>"; };
+		553792CD2D949ACF000944A6 /* PrintPalavreco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintPalavreco.swift; sourceTree = "<group>"; };
 		558F66B02D8DFD4800ADB9B4 /* FluentQuest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FluentQuest; sourceTree = BUILT_PRODUCTS_DIR; };
 		558F66B32D8DFD4800ADB9B4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		558F66BE2D8DFDE500ADB9B4 /* ModoJogo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModoJogo.swift; sourceTree = "<group>"; };
 		558F66BF2D8DFDE500ADB9B4 /* TopicosEstudo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicosEstudo.swift; sourceTree = "<group>"; };
-		558F66C02D8DFDE500ADB9B4 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		558F66C12D8DFDE500ADB9B4 /* MenuPrincipal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuPrincipal.swift; sourceTree = "<group>"; };
 		558F66C22D8DFDE500ADB9B4 /* SelecionarIdioma.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelecionarIdioma.swift; sourceTree = "<group>"; };
 		558F66C32D8DFDE500ADB9B4 /* Exercicio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercicio.swift; sourceTree = "<group>"; };
@@ -52,9 +62,9 @@
 		558F66D02D8DFE0800ADB9B4 /* RotinaDiaria.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotinaDiaria.swift; sourceTree = "<group>"; };
 		558F66D12D8DFE0800ADB9B4 /* ViagemMundo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViagemMundo.swift; sourceTree = "<group>"; };
 		558F66D22D8DFE0800ADB9B4 /* ComprasMercado.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComprasMercado.swift; sourceTree = "<group>"; };
-		558F66D62D8DFE1300ADB9B4 /* DescubraAPalavraOculta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescubraAPalavraOculta.swift; sourceTree = "<group>"; };
-		558F66D72D8DFE1300ADB9B4 /* OuvirETraduzir.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OuvirETraduzir.swift; sourceTree = "<group>"; };
-		558F66D82D8DFE1300ADB9B4 /* SelecioneATraduçãoCorreta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SelecioneATraduçãoCorreta.swift"; sourceTree = "<group>"; };
+		558F66D62D8DFE1300ADB9B4 /* Palavreco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Palavreco.swift; sourceTree = "<group>"; };
+		558F66D72D8DFE1300ADB9B4 /* TerminalFalante.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TerminalFalante.swift; sourceTree = "<group>"; };
+		558F66D82D8DFE1300ADB9B4 /* LigueLigue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LigueLigue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +78,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		553792CC2D949AB8000944A6 /* PrintDosExs */ = {
+			isa = PBXGroup;
+			children = (
+				553792CD2D949ACF000944A6 /* PrintPalavreco.swift */,
+				5507D2F12D95CEA7002BB1B4 /* PrintTerminalFalante.swift */,
+				5507D2F32D95E7AD002BB1B4 /* PrintLigueLigue.swift */,
+				5507D2F52D95EF09002BB1B4 /* PrintDicionario.swift */,
+			);
+			path = PrintDosExs;
+			sourceTree = "<group>";
+		};
 		558F66A72D8DFD4800ADB9B4 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +108,7 @@
 		558F66B22D8DFD4800ADB9B4 /* FluentQuest */ = {
 			isa = PBXGroup;
 			children = (
+				553792CC2D949AB8000944A6 /* PrintDosExs */,
 				558F66BD2D8DFDB900ADB9B4 /* Menu */,
 				558F66BC2D8DFD9600ADB9B4 /* Utils */,
 				558F66BB2D8DFD8900ADB9B4 /* Historia */,
@@ -99,9 +121,9 @@
 		558F66BA2D8DFD7500ADB9B4 /* Exercícios */ = {
 			isa = PBXGroup;
 			children = (
-				558F66D62D8DFE1300ADB9B4 /* DescubraAPalavraOculta.swift */,
-				558F66D72D8DFE1300ADB9B4 /* OuvirETraduzir.swift */,
-				558F66D82D8DFE1300ADB9B4 /* SelecioneATraduçãoCorreta.swift */,
+				558F66D62D8DFE1300ADB9B4 /* Palavreco.swift */,
+				558F66D72D8DFE1300ADB9B4 /* TerminalFalante.swift */,
+				558F66D82D8DFE1300ADB9B4 /* LigueLigue.swift */,
 			);
 			name = "Exercícios";
 			path = "Exercícios";
@@ -123,6 +145,7 @@
 				558F66CA2D8DFDFD00ADB9B4 /* Helpers.swift */,
 				558F66CB2D8DFDFD00ADB9B4 /* LimparTerminal.swift */,
 				558F66CC2D8DFDFD00ADB9B4 /* Perguntas.swift */,
+				553792CA2D9475BD000944A6 /* CaractereVazio.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -131,11 +154,11 @@
 			isa = PBXGroup;
 			children = (
 				558F66C32D8DFDE500ADB9B4 /* Exercicio.swift */,
-				558F66C02D8DFDE500ADB9B4 /* Menu.swift */,
 				558F66C12D8DFDE500ADB9B4 /* MenuPrincipal.swift */,
 				558F66BE2D8DFDE500ADB9B4 /* ModoJogo.swift */,
 				558F66C22D8DFDE500ADB9B4 /* SelecionarIdioma.swift */,
 				558F66BF2D8DFDE500ADB9B4 /* TopicosEstudo.swift */,
+				553792C82D94693D000944A6 /* Dicionario.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -168,7 +191,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					558F66AF2D8DFD4800ADB9B4 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -198,22 +221,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5507D2F62D95EF09002BB1B4 /* PrintDicionario.swift in Sources */,
 				558F66C72D8DFDE500ADB9B4 /* MenuPrincipal.swift in Sources */,
+				5507D2F42D95E7AD002BB1B4 /* PrintLigueLigue.swift in Sources */,
 				558F66D32D8DFE0800ADB9B4 /* RotinaDiaria.swift in Sources */,
-				558F66D92D8DFE1300ADB9B4 /* DescubraAPalavraOculta.swift in Sources */,
-				558F66DB2D8DFE1300ADB9B4 /* SelecioneATraduçãoCorreta.swift in Sources */,
+				558F66D92D8DFE1300ADB9B4 /* Palavreco.swift in Sources */,
+				558F66DB2D8DFE1300ADB9B4 /* LigueLigue.swift in Sources */,
+				553792C92D94693D000944A6 /* Dicionario.swift in Sources */,
+				553792CE2D949ACF000944A6 /* PrintPalavreco.swift in Sources */,
 				558F66C52D8DFDE500ADB9B4 /* TopicosEstudo.swift in Sources */,
 				558F66CE2D8DFDFD00ADB9B4 /* LimparTerminal.swift in Sources */,
+				553792CB2D9475BD000944A6 /* CaractereVazio.swift in Sources */,
 				558F66D42D8DFE0800ADB9B4 /* ViagemMundo.swift in Sources */,
+				5507D2F22D95CEA7002BB1B4 /* PrintTerminalFalante.swift in Sources */,
 				558F66B42D8DFD4800ADB9B4 /* main.swift in Sources */,
 				558F66CD2D8DFDFD00ADB9B4 /* Helpers.swift in Sources */,
 				558F66C82D8DFDE500ADB9B4 /* SelecionarIdioma.swift in Sources */,
 				558F66C92D8DFDE500ADB9B4 /* Exercicio.swift in Sources */,
 				558F66CF2D8DFDFD00ADB9B4 /* Perguntas.swift in Sources */,
-				558F66C62D8DFDE500ADB9B4 /* Menu.swift in Sources */,
 				558F66D52D8DFE0800ADB9B4 /* ComprasMercado.swift in Sources */,
 				558F66C42D8DFDE500ADB9B4 /* ModoJogo.swift in Sources */,
-				558F66DA2D8DFE1300ADB9B4 /* OuvirETraduzir.swift in Sources */,
+				558F66DA2D8DFE1300ADB9B4 /* TerminalFalante.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +281,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -313,6 +342,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -336,7 +366,9 @@
 		558F66B82D8DFD4800ADB9B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -345,7 +377,9 @@
 		558F66B92D8DFD4800ADB9B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};

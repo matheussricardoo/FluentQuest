@@ -1,3 +1,4 @@
+
 import Foundation
 
 // Variável global para controlar se o jogo deve continuar rodando
@@ -5,7 +6,7 @@ var rodando = true
 
 // Função para tratar o sinal SIGINT (Control + C)
 func configurarCapturaDeSinal() {
-    signal(SIGINT) { signal in
+    let signalCallback : sig_t = { signal in
         print("\nDeseja realmente encerrar o jogo, DIEGO? (s/n): ", terminator: "")
         if let resposta = readLine()?.lowercased() {
             if resposta == "s" {
@@ -16,12 +17,14 @@ func configurarCapturaDeSinal() {
             }
         }
     }
+
+    signal(SIGINT, signalCallback)
+    signal(SIGTERM, signalCallback)
 }
 
 // Função principal para tratar a escolha do usuário
 func tratarEscolhaUsuario() {
     configurarCapturaDeSinal() // Configura a captura do sinal SIGINT
-    
     while rodando {
         limparTerminal()
         exibirHome()
@@ -91,16 +94,17 @@ func tratarEscolhaUsuario() {
                             case 3:
                                 var dicionario = true
                                 while dicionario{
-                                    print("Digite 1 para ir para o dicionario ou 0 para voltar")
-                                    print("\nDigite uma opção: ", terminator: "")
+                                    limparTerminal()
+                                    verDicionario()
+                                    print("\n\(blank)Digite 0 para voltar: ", terminator: "")
+                                    
                                     if let dicionarioInput = readLine(), let dicionarioOpcao = Int(dicionarioInput) {
                                         switch dicionarioOpcao{
-                                        case 1:
-                                            verDicionario()
+
                                         case 0:
                                             dicionario = false
                                         default:
-                                            print("\n Opção inválida")
+                                            print("\n\(blank) Opção inválida")
                                         }
                                     }
                                 }
@@ -114,7 +118,7 @@ func tratarEscolhaUsuario() {
                     }
                 }
             case 0:
-                print("\n\(blank)Até logo! 😊")
+                print("\n  \(blank)  \(green)        Até logo! 😊")
                 rodando = false
             default:
                 print("\n\(blank)Opção inválida!")
@@ -124,6 +128,5 @@ func tratarEscolhaUsuario() {
 }
 
 // Iniciar o jogo
-
 tratarEscolhaUsuario()
 

@@ -1,5 +1,40 @@
 // Função para exibir a introdução da Rotina Diária
 func exibirIntroducaoRotinaDiaria() {
+    print("""
+                                                        RRRRRRRRRRRRRRRRR                             tttt            iiii
+                                                        R::::::::::::::::R                         ttt:::t           i::::i
+                                                        R::::::RRRRRR:::::R                        t:::::t            iiii
+                                                        RR:::::R     R:::::R                       t:::::t
+                                                          R::::R     R:::::R   ooooooooooo   ttttttt:::::ttttttt    iiiiiiinnnn  nnnnnnnn      aaaaaaaaaaaaa
+                                                          R::::R     R:::::R oo:::::::::::oo t:::::::::::::::::t    i:::::in:::nn::::::::nn    a::::::::::::a
+                                                          R::::RRRRRR:::::R o:::::::::::::::ot:::::::::::::::::t     i::::in::::::::::::::nn   aaaaaaaaa:::::a
+                                                          R:::::::::::::RR  o:::::ooooo:::::otttttt:::::::tttttt     i::::inn:::::::::::::::n           a::::a
+                                                          R::::RRRRRR:::::R o::::o     o::::o      t:::::t           i::::i  n:::::nnnn:::::n    aaaaaaa:::::a
+                                                          R::::R     R:::::Ro::::o     o::::o      t:::::t           i::::i  n::::n    n::::n  aa::::::::::::a
+                                                          R::::R     R:::::Ro::::o     o::::o      t:::::t           i::::i  n::::n    n::::n a::::aaaa::::::a
+                                                          R::::R     R:::::Ro::::o     o::::o      t:::::t    tttttt i::::i  n::::n    n::::na::::a    a:::::a
+                                                        RR:::::R     R:::::Ro:::::ooooo:::::o      t::::::tttt:::::ti::::::i n::::n    n::::na::::a    a:::::a
+                                                        R::::::R     R:::::Ro:::::::::::::::o      tt::::::::::::::ti::::::i n::::n    n::::na:::::aaaa::::::a
+                                                        R::::::R     R:::::R oo:::::::::::oo         tt:::::::::::tti::::::i n::::n    n::::n a::::::::::aa:::a
+                                                        RRRRRRRR     RRRRRRR   ooooooooooo             ttttttttttt  iiiiiiii nnnnnn    nnnnnn  aaaaaaaaaa  aaaa
+                                            
+                                                              DDDDDDDDDDDDD          iiii                                        iiii
+                                                              D::::::::::::DDD      i::::i                                      i::::i
+                                                              D:::::::::::::::DD     iiii                                        iiii
+                                                              DDD:::::DDDDD:::::D
+                                                                D:::::D    D:::::D iiiiiii   aaaaaaaaaaaaa  rrrrr   rrrrrrrrr  iiiiiii   aaaaaaaaaaaaa
+                                                                D:::::D     D:::::Di:::::i   a::::::::::::a r::::rrr:::::::::r i:::::i   a::::::::::::a
+                                                                D:::::D     D:::::D i::::i   aaaaaaaaa:::::ar:::::::::::::::::r i::::i   aaaaaaaaa:::::a
+                                                                D:::::D     D:::::D i::::i            a::::arr::::::rrrrr::::::ri::::i            a::::a
+                                                                D:::::D     D:::::D i::::i     aaaaaaa:::::a r:::::r     r:::::ri::::i     aaaaaaa:::::a
+                                                                D:::::D     D:::::D i::::i   aa::::::::::::a r:::::r     rrrrrrri::::i   aa::::::::::::a
+                                                                D:::::D     D:::::D i::::i  a::::aaaa::::::a r:::::r            i::::i  a::::aaaa::::::a
+                                                                D:::::D    D:::::D  i::::i a::::a    a:::::a r:::::r            i::::i a::::a    a:::::a
+                                                              DDD:::::DDDDD:::::D  i::::::ia::::a    a:::::a r:::::r           i::::::ia::::a    a:::::a
+                                                              D:::::::::::::::DD   i::::::ia:::::aaaa::::::a r:::::r           i::::::ia:::::aaaa::::::a
+                                                              D::::::::::::DDD     i::::::i a::::::::::aa:::ar:::::r           i::::::i a::::::::::aa:::a
+                                                              DDDDDDDDDDDDD        iiiiiiii  aaaaaaaaaa  aaaarrrrrrr           iiiiiiii  aaaaaaaaaa  aaaa
+    """)
     print("\n🎯 Bem-vindo à Rotina Diária! 🎯\n")
     print("Aqui, você acompanhará um dia na vida de Joãozinho e aprenderá novas palavras e expressões de forma interativa.\n")
     

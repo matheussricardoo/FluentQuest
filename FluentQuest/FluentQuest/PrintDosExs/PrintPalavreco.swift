@@ -19,8 +19,32 @@ func printPalavreco(){
                             P::::::::P        a:::::aaaa::::::a l::::::la:::::aaaa::::::a       v:::::v          r:::::r             e::::::::eeeeeeee   c:::::::::::::::::co:::::::::::::::o
                             P::::::::P         a::::::::::aa:::al::::::l a::::::::::aa:::a       v:::v           r:::::r              ee:::::::::::::e    cc:::::::::::::::c oo:::::::::::oo
                             PPPPPPPPPP          aaaaaaaaaa  aaaallllllll  aaaaaaaaaa  aaaa        vvv            rrrrrrr                eeeeeeeeeeeeee      cccccccccccccccc   ooooooooooo
-                                                                                                                                                                         
-                                                                                                                                
+                                                                                                       
+        
+        
+                                        Descubra a palavra secreta na lingua escolhida.
+                                        
+                                        Depois de cada tentativa as letras da palavra secreta mostram o quão perto você está de adivinha-lá
+                                        
+                                        Exemplo:
+                                        
+                                        A primeira tentativa de acertar a palavra secreta foi Gato
+                                        
+                                        "G\(yellow)a\(reset)t\(green)o\(reset)"
+                                        
+                                        A letra \(green)"o"\(reset) faz parte da palavra secreta e está na posição correta (a quarta letra da palavra)
+                                        
+                                        Já a letra \(yellow)"a"\(reset) está presente na palavra secreta mas \(red)não\(reset) está na posição correta
+                                        
+                                        Assim podemos tentar a palvra Alvo que possui a letra \(green)"o"\(reset) na quarta posição e também possui a letra \(yellow)"a"\(reset) fora da segunda posição
+                                        
+                                        Ao acertar a palavra ela ficará verde \(green)"Alvo"\(reset)
+                                        
+                                        As demais letras que ficarem brancas \(red)não\(reset) fazem parte da palavra secreta
+            
+                                        A qualquer momento que desejar digite \(red)'sair'\(reset) para voltar ao menu
+        
+        
         """)
     
 }

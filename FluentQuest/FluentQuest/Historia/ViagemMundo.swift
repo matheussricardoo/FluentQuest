@@ -1,5 +1,42 @@
 // Função para iniciar o tópico Viagem pelo Mundo
 func exibirIntroducaoViagemMundo() {
+    print("""
+                                                    VVVVVVVV           VVVVVVVV iiii
+                                                    V::::::V           V::::::Vi::::i
+                                                    V::::::V           V::::::V iiii
+                                                    V::::::V           V::::::V
+                                                     V:::::V           V:::::Viiiiiii   aaaaaaaaaaaaa     ggggggggg   ggggg    eeeeeeeeeeee       mmmmmmm    mmmmmmm
+                                                      V:::::V         V:::::V i:::::i   a::::::::::::a   g:::::::::ggg::::g  ee::::::::::::ee   mm:::::::m  m:::::::mm
+                                                       V:::::V       V:::::V   i::::i   aaaaaaaaa:::::a g:::::::::::::::::g e::::::eeeee:::::eem::::::::::mm::::::::::m
+                                                        V:::::V     V:::::V    i::::i            a::::ag::::::ggggg::::::gge::::::e     e:::::em::::::::::::::::::::::m
+                                                         V:::::V   V:::::V     i::::i     aaaaaaa:::::ag:::::g     g:::::g e:::::::eeeee::::::em:::::mmm::::::mmm:::::m
+                                                          V:::::V V:::::V      i::::i   aa::::::::::::ag:::::g     g:::::g e:::::::::::::::::e m::::m   m::::m   m::::m
+                                                           V:::::V:::::V       i::::i  a::::aaaa::::::ag:::::g     g:::::g e::::::eeeeeeeeeee  m::::m   m::::m   m::::m
+                                                            V:::::::::V        i::::i a::::a    a:::::ag::::::g    g:::::g e:::::::e           m::::m   m::::m   m::::m
+                                                             V:::::::V        i::::::ia::::a    a:::::ag:::::::ggggg:::::g e::::::::e          m::::m   m::::m   m::::m
+                                                              V:::::V         i::::::ia:::::aaaa::::::a g::::::::::::::::g  e::::::::eeeeeeee  m::::m   m::::m   m::::m
+                                                               V:::V          i::::::i a::::::::::aa:::a gg::::::::::::::g   ee:::::::::::::e  m::::m   m::::m   m::::m
+                                                                VVV           iiiiiiii  aaaaaaaaaa  aaaa   gggggggg::::::g     eeeeeeeeeeeeee  mmmmmm   mmmmmm   mmmmmm
+                                                                                                                   g:::::g
+                                                                                                       gggggg      g:::::g
+                                                                                                       g:::::gg   gg:::::g       dddddddd
+                                                    MMMMMMMM               MMMMMMMM                     g::::::ggg:::::::g       d::::::d
+                                                    M:::::::M             M:::::::M                      gg:::::::::::::g        d::::::d
+                                                    M::::::::M           M::::::::M                        ggg::::::ggg          d::::::d
+                                                    M:::::::::M         M:::::::::M                           gggggg             d:::::d
+                                                    M::::::::::M       M::::::::::Muuuuuu    uuuuuunnnn  nnnnnnnn        ddddddddd:::::d    ooooooooooo
+                                                    M:::::::::::M     M:::::::::::Mu::::u    u::::un:::nn::::::::nn    dd::::::::::::::d  oo:::::::::::oo
+                                                    M:::::::M::::M   M::::M:::::::Mu::::u    u::::un::::::::::::::nn  d::::::::::::::::d o:::::::::::::::o
+                                                    M::::::M M::::M M::::M M::::::Mu::::u    u::::unn:::::::::::::::nd:::::::ddddd:::::d o:::::ooooo:::::o
+                                                    M::::::M  M::::M::::M  M::::::Mu::::u    u::::u  n:::::nnnn:::::nd::::::d    d:::::d o::::o     o::::o
+                                                    M::::::M   M:::::::M   M::::::Mu::::u    u::::u  n::::n    n::::nd:::::d     d:::::d o::::o     o::::o
+                                                    M::::::M    M:::::M    M::::::Mu::::u    u::::u  n::::n    n::::nd:::::d     d:::::d o::::o     o::::o
+                                                    M::::::M     MMMMM     M::::::Mu:::::uuuu:::::u  n::::n    n::::nd:::::d     d:::::d o::::o     o::::o
+                                                    M::::::M               M::::::Mu:::::::::::::::uun::::n    n::::nd::::::ddddd::::::ddo:::::ooooo:::::o
+                                                    M::::::M               M::::::M u:::::::::::::::un::::n    n::::n d:::::::::::::::::do:::::::::::::::o
+                                                    M::::::M               M::::::M  uu::::::::uu:::un::::n    n::::n  d:::::::::ddd::::d oo:::::::::::oo
+                                                    MMMMMMMM               MMMMMMMM    uuuuuuuu  uuuunnnnnn    nnnnnn   ddddddddd   ddddd   ooooooooooo
+    """)
     print("\n✈️ Pronto para embarcar em uma aventura? 🌍\n")
     print("Nesta jornada, você acompanhará Joãozinho explorando diferentes países, aprendendo novas palavras e expressões em cada destino.\n")
     

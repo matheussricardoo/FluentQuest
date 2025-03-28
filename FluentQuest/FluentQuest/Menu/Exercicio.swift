@@ -54,9 +54,9 @@ func exibirExercicio(){
                                               ⠀⠀⠀⢸⠿⠟⠛⠛⠀⠀⠀⠀⠀⠉⠛⠿⠿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀                            ⠈⠉⠉⠉⠉⠉⠉⠉⠁                             '-----'
           
           
-                                                      1 - Palavreco                                2 - Terminal Falante                                 3 - Ligue-Ligue
+                                                      1 - Palavreco 🅿️                             2 - Terminal Falante 🖥️                              3 - Ligue-Ligue ⛓️
                                           
-                                                                                                    0 - Voltar ao menu
+                                                                                                   0 - Voltar ao menu ↩️
           """)
 
 }
